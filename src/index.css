@@ -1,9 +1,15 @@
 @import url("https://fonts.cdnfonts.com/css/sf-pro-display");
 
+@font-face {
+  font-family: "Score";
+  src: url("./assets/fonts/SCDream4.otf") format("opentype");
+}
+
 body {
   margin: 0;
-  font-family: "SF Pro Display", SF Pro Icons, Helvetica Neue, Helvetica, Arial,
-    sans-serif;
+  /* font-family: "SF Pro Display", SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif; */
+  font-family: "Score";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #000;
