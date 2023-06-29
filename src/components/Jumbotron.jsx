@@ -3,6 +3,14 @@ import Iphone from "../assets/images/iphone-14.jpg";
 import HoldingIphone from "../assets/images/iphone-hand.png";
 
 const Jumbotron = () => {
+  const handleLearnMore = () => {
+    const element = document.querySelector(".sound-section");
+    window.scrollTo({
+      top: element?.getBoundingClientRect().top,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="jumbotron-section wrapper">
       <h2 className="title">New</h2>
@@ -16,7 +24,9 @@ const Jumbotron = () => {
           <button className="button">구입하기</button>
         </li>
         <li>
-          <a className="link">자세히 알아보기</a>
+          <a className="link" onClick={handleLearnMore}>
+            자세히 알아보기
+          </a>
         </li>
       </ul>
       <img className="iphone-img" src={HoldingIphone} alt="iPhone" />
