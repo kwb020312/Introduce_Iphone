@@ -15,7 +15,7 @@ const Jumbotron = () => {
     <div className="jumbotron-section wrapper">
       <h2 className="title">New</h2>
       <img className="logo" src={Iphone} alt="iPhone 14 Pro" />
-      <p className="text">거대하고 더 거대하게.</p>
+      <p className="text">더욱더 거대하게.</p>
       <span className="description">
         ₩1,550,000부터(보상 판매* 미적용 가격)
       </span>
