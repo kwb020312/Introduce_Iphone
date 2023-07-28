@@ -1,6 +1,6 @@
 import React from "react";
 
-const DisplaySection = () => {
+const DisplaySection = ({ triggerPreview }) => {
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
@@ -11,7 +11,9 @@ const DisplaySection = () => {
       <span className="description">
         강한 햇빛에도 두배로 잘 보이는 디스플레이
       </span>
-      <button className="button">테스트하기!</button>
+      <button className="button" onClick={triggerPreview}>
+        테스트하기!
+      </button>
       <button className="back-button" onClick={handleScrollToTop}>
         상단으로
       </button>
